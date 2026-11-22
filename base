@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS inventario_computo;
+USE inventario_computo;
+
+CREATE TABLE equipos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL,
+    stock INT NOT NULL
+    
+    
+);
+
+-- Datos de prueba
+INSERT INTO equipos (nombre, categoria, precio, stock) VALUES 
+('Laptop Dell Inspiron 15', 'Laptops', 14500.00, 10),
+('Monitor LG UltraGear 24"', 'Monitores', 4200.50, 15),
+('Teclado Mecánico Logitech', 'Periféricos', 1800.00, 25);
